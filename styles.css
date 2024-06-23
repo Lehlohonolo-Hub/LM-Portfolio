@@ -1782,7 +1782,7 @@ padding: 5vw;
 
 
 #page4{
-    max-height: 80vh;
+    min-height: 80vh;
     
 }
 
