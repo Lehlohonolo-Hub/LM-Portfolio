@@ -21,7 +21,7 @@ html, body{
     width: 100%;
     cursor: not-allowed;
     cursor: none;
-    
+    scroll-behavior: smooth;
 }
 
 
@@ -402,7 +402,7 @@ font-weight: 500;
     filter: blur(30px);
     z-index: -1;
     animation-name: gooey;
-    animation-duration: 6.2s;
+    animation-duration: 7.2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate ;
@@ -1298,7 +1298,6 @@ padding: 5vw;
 @media (max-width:800px){
     .first-text{
         font-size: 100px;
-        
     }
 
     .third-text{
@@ -1332,12 +1331,13 @@ padding: 5vw;
 @media (max-width:600px) {
 
     #aboutGooey1, #aboutGooey2{
-        top: 15%;
+        top: 12%;
+        filter: blur(25px);
     }
 
     .first-text{
-        font-size: 100px;
-        line-height: 6.5rem;
+        font-size: 80px;
+        line-height: 6rem;
         
     }
 
@@ -1452,6 +1452,19 @@ padding: 5vw;
         z-index: 9;
     }
 
+    
+    #hero-1{
+        filter: blur(18px);
+    }
+
+    #hero-2{
+        filter: blur(20px);
+    }
+
+    #hero-3{
+        filter: blur(22px);
+    }
+
     #left h3{
         width: 80%;
         font-size: 5.5vw;
@@ -1506,10 +1519,10 @@ padding: 5vw;
 
     
     #page2-bottom h1{
-    font-size: 6.5vw;
+    font-size: 6vw;
     width: 100%;
     line-height: 7.5vw;
-    
+    text-align: center;
     }
     
     #bottom-part2{
@@ -1523,15 +1536,22 @@ padding: 5vw;
 
     
     #bottom-part2 p{
-        margin-top: 3vw;
+        margin: 2vw 0 18px 0;
         font-size: 3vw;
+        text-align: center;
     }
     
     
     #page2 #gooey{
-        height: 50vw;
-        width: 35vw;
+        height: 20vw;
+        width: 20vw;
+        top: 16%;
+        left: 55%;
+        filter: blur(12px);
+    }
 
+    .featured-dot{
+        padding: 0 0 10px;
     }
 
     #fixed-image{
@@ -1562,7 +1582,6 @@ padding: 5vw;
 
     .subtitle p{
         font-size: .7rem;
-        
     }
 
     #page4{
@@ -1608,6 +1627,7 @@ padding: 5vw;
     #contact-gooey{
         left: 50%;
         top: -230px;
+        filter: blur(14px);
     }
 
     #contact-section p{
@@ -1796,7 +1816,7 @@ padding: 5vw;
     }
 
     #aboutGooey2, #aboutGooey1 {
-        top: 12%;
+        top: 10%;
         height: 40vw;
         width: 45vw;
     }
