@@ -151,7 +151,7 @@ sr.reveal(`.work-project1-M `, {origin:'bottom', delay:'200', interval:'100',dis
 
 /*=== SR Index Page ===*/
 
-sr.reveal(`.elem h2` , {origin:'bottom', distance:'50px', interval:100}) 
+sr.reveal(`.elem h2` , {origin:'bottom', distance:'50px', interval:200}) 
 
 /*=== SR About Page ===*/
 

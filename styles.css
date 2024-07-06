@@ -399,10 +399,10 @@ font-weight: 500;
     background: linear-gradient(to top right, blue, rgba(49, 49, 255, 0.884));
     
     left: -55%;
-    filter: blur(30px);
+    filter: blur(25px);
     z-index: -1;
     animation-name: gooey;
-    animation-duration: 7.2s;
+    animation-duration: 3.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate ;
@@ -490,10 +490,10 @@ font-weight: 500;
 
 @keyframes gooey {
     from{
-        transform: translate(10%,-10%) skew(0);
+        transform: translate(8%,10%) skew(2deg);
     }
     to{
-        transform: translate(-10%, -10%) skew(8deg);
+        transform: translate(-10%, -8%) skew(4deg);
     }
     
 }
@@ -502,22 +502,26 @@ font-weight: 500;
 
 #work-page1{
     min-height: 100vh;
-    
     width: 100%;
     background-color: #EFEAE3;
     position: relative;
-   
+}
+
+.buttonContainer{
+    display: grid;
 }
 
 #work-section p{
     font-size: 10rem;
     font-weight: 550;
+    z-index: 9;
+    position: relative;
 }
 
 .tabContainer{
-padding: 5vw;
-
-
+    padding: 5vw;
+    z-index: 1;
+    position: relative;
 }
 
 .work-links{
@@ -530,6 +534,7 @@ padding: 5vw;
     position: absolute ;
     padding: .5rem;
     border-radius: 25px;
+    background-color: #EFEAE3;
     
 }
 
@@ -541,11 +546,9 @@ padding: 5vw;
     font-weight: 300;
     border: none;
     background-color: #EFEAE3;
-    
 }
 
 .work-projects button:hover{
-    
     cursor: pointer;
     position: relative;
     color: white;
@@ -583,7 +586,8 @@ padding: 5vw;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    z-index: 9;
+    position: relative;
 }
 
 .w-p img{
@@ -601,24 +605,36 @@ padding: 5vw;
     transition: transform 0.8s;
 }
 
-@media (max-width:800px) {
-    #work-project-content{
-        padding: 20px;
-        display: block;
-       
-    }
 
-    #work-project-content p{
-        font-size: 1.5rem;
-        
-        
-    }
+#work-gooey{
+    height: 95vh;
+    width: 100vh;
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(to top right, blue, rgba(49, 49, 255, 0.884));
+    display: flex;
+    filter: blur(30px);
+    z-index: 1;
+    animation-name: work-gooey;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate ;
+    top: auto;
+    justify-self: center;
+    align-self: center;
+    overflow: hidden;
+    
+}
 
-
-    #work-gooey{
-        top: 105px;
-   
+@keyframes work-gooey {
+    from{
+        transform: translate(3%,-5%) skew(0);
     }
+    to{
+        transform: translate(-5%, 3%) skew(0);
+    }
+    
 }
 
 /*#########################*/
@@ -674,7 +690,6 @@ padding: 5vw;
     display: flex;
     right: 0;
     position: absolute;
-  
     
 }
 
@@ -797,7 +812,6 @@ padding: 5vw;
     
 }
     
-
 .title{
     padding: 25px;
     margin-left: 20px;
@@ -812,8 +826,6 @@ padding: 5vw;
     font-family:  "Chakra Petch", sans-serif;
 }
     
-
-
 .title p{
     font-size: 1em;
     font-weight: 200;
@@ -842,7 +854,6 @@ padding: 5vw;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    
 }
 
 
@@ -1004,7 +1015,7 @@ padding: 5vw;
     left: 80%;
     filter: blur(55px);
     z-index: -1;
-    animation-name: gooey;
+    animation-name: gooey-footer;
     animation-duration: 4.9s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -1014,7 +1025,7 @@ padding: 5vw;
 
 
 
-@keyframes gooey {
+@keyframes gooey-footer {
     from{
         transform: translate(10%,-10%) skew(0);
     }
@@ -1035,7 +1046,7 @@ padding: 5vw;
     left: 65%;
     filter: blur(70px);
     z-index: -1;
-    animation-name: gooey;
+    animation-name: gooey-footer2;
     animation-duration: 6s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
@@ -1044,7 +1055,7 @@ padding: 5vw;
 }
 
 
-@keyframes gooey {
+@keyframes gooey-footer2 {
     from{
         transform: translate(10%,-50%) skew(0);
     }
@@ -1326,6 +1337,31 @@ padding: 5vw;
         width: 200px;
     }
 
+    #work-project-content{
+        padding: 20px;
+        display: block;
+    }
+
+    #work-project-content a p{
+        font-size: 1.5rem;
+        
+    }
+
+    #work-gooey{
+        height: 60vh;
+        width: 60vh;
+        z-index: -99;
+        
+    }
+
+    .w-p img{
+        width: 280px;
+    }
+
+    .w-p .ipad{
+        width: 320px;
+    }
+
 }
 
 @media (max-width:600px) {
@@ -1517,7 +1553,7 @@ padding: 5vw;
         
     }
 
-    
+
     #page2-bottom h1{
     font-size: 6vw;
     width: 100%;
@@ -1690,6 +1726,14 @@ padding: 5vw;
     #block-media-screen{
         display: grid;
     }
+
+    .w-p img{
+        width: 280px;
+    }
+
+    .w-p .ipad{
+        width: 300px;
+    }
     
 
 }
@@ -1748,6 +1792,20 @@ padding: 5vw;
         font-size: 5rem;
         text-align: center;
         
+    }
+
+    #work-gooey{
+        height: 40vh;
+        width: 40vh;
+        
+    }
+
+    .w-p img{
+        width: 220px;
+    }
+
+    .w-p .ipad{
+        width: 260px;
     }
 
     .bottom-about-pg p{
@@ -1919,8 +1977,12 @@ padding: 5vw;
         
     }
 
+    .w-p img{
+        width: 130px;
+    }
+
     .w-p .ipad{
-        width: 200px;
+        width: 160px;
     }
 
     .work-projects a{
