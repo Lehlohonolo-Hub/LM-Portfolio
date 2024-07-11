@@ -469,7 +469,7 @@ font-weight: 500;
 
 .contact-socials a::after{
     content: "";
-    position:relative;
+    position: relative;
     background-color: #001bebd3;
     height: 3px;
     width: 0;
